@@ -11,6 +11,7 @@ let maxDecel=dev.entry(0x6084,0x00).setType("int32");
 let control=dev.entry(0x6040,0x00).setType("uint16");
 
 await control.set(0x0f);
+//await control.set(0x0);
 
 await maxAccel.set(10000);
 await maxDecel.set(10000);
