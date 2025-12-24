@@ -4,7 +4,7 @@
 using namespace canopener;
 
 SerialBus serialBus(Serial);
-EspBus espBus(5,4);
+EspBus espBus(5,4); // tx, rx
 BridgeBus bus(serialBus,espBus);
 Device dev(bus);
 MotorController motorController(dev);
